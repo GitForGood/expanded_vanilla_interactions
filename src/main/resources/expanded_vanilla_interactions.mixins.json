@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.expandedvanilla.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "boat_mooring.BoatEntityMixin",
+    "boat_mooring.LeadItemMixin",
+    "boat_mooring.LeashKnotEntityMixin",
+    "boat_mooring.EntityTrackerEntryMixin"
+  ],
+  "client": [
+    "boat_mooring.client.BoatEntityRendererMixin",
+    "boat_mooring.client.ClientPlayNetworkHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

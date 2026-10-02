@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "expanded_vanilla_interactions",
+  "version": "${version}",
+  "name": "Expanded Vanilla Interactions",
+  "description": "Expands vanilla Minecraft interactions in a clean, modular fashion. Adds boat mooring to leads and fence posts with emergent color-matched mooring posts.",
+  "authors": [
+    "Oliver Softa"
+  ],
+  "contact": {
+    "homepage": "https://github.com/swegr/expanded_vanilla_interactions",
+    "sources": "https://github.com/swegr/expanded_vanilla_interactions"
+  },
+  "license": "MIT",
+  "icon": "assets/expanded_vanilla_interactions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.expandedvanilla.ExpandedVanillaInteractions"
+    ],
+    "client": [
+      "net.expandedvanilla.client.ExpandedVanillaInteractionsClient"
+    ]
+  },
+  "mixins": [
+    "expanded_vanilla_interactions.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
